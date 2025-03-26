@@ -2,6 +2,32 @@ html{
     background-color: var(--color-white-100);
 }
 
+#postit{
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+
+#postit-text{
+    position: absolute;
+    width: 220px;
+    top: 15%;
+    left: 0%;
+    z-index: 1;
+    text-align: center;
+}
+
+#postit-text p{
+    font-family: 'NanumGangBuJangNimCe';
+    font-size: 23px;
+}
+
+#postit img{
+    rotate:calc(270deg);
+    width: 200px;
+    top: 0;
+}
+
 header{
     text-align: center;
     margin-top: 120px;
