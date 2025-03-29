@@ -112,7 +112,7 @@ header p{
     width: 100%;
 }
 
-#login-wrapper button{
+#login-btn{
     width: 200px;
     height: 60px;
     font-size: 20px;
@@ -121,4 +121,23 @@ header p{
     border: none;
     border-radius: 8px;
     margin: 0px auto;
+}
+
+#sign-in{
+    border: none;
+    font-family: inherit;
+    background: none;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 0;
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: var(--color-red-700);
+    display: block;
+}
+
+#sign-in:hover{
+    color: var(--color-red-500);
+    font-weight: bold;
+    text-decoration: underline;
 }
