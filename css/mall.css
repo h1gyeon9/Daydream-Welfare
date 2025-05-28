@@ -41,6 +41,7 @@ header input{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    position: relative;
 }
 
 .menu-btn span{
@@ -65,8 +66,41 @@ header input{
     align-items: center;
     justify-content: space-around;
     margin-left: 2rem;
+    position: relative;
 }
 
 .menu h2{
     margin: 0;
+}
+
+.submenu{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: var(--color-white-100);
+    width: 100%;
+}
+
+.submenu h3{
+    margin: 0;
+    margin: 10px 2px;
+}
+
+#entire-menu{
+    width: 100vw;
+    height: 112px;
+    display: none;
+}
+
+.menu sidebar{
+    opacity: 0;
+    transform: translateY(-10px);
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+a.menu:hover sidebar{
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
 }
