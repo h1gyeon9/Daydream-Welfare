@@ -5,6 +5,10 @@ header{
     margin: 1% 2% 1.5% 2%;
 }
 
+highlight{
+    color: var(--color-red-500);
+}
+
 #logo-wrapper{
     text-align: center;
 }
@@ -53,7 +57,7 @@ header input{
 .category{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 15px;
 }
 
@@ -63,14 +67,14 @@ header input{
 
 .menu{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin-left: 2rem;
     position: relative;
 }
 
 .menu h2{
-    margin: 0;
+    margin: 0 2rem;
 }
 
 .submenu{
@@ -79,17 +83,15 @@ header input{
     left: 0%;
     background-color: var(--color-white-100);
     width: 100%;
+    border: 1.5px solid var(--color-red-700);
+    border-radius: 2px;
+    box-shadow: 1.5px 1.5px 3px var(--color-red-700);
 }
 
 .submenu h3{
     margin: 0;
     margin: 10px 2px;
-}
-
-#entire-menu{
-    width: 100vw;
-    height: 112px;
-    display: none;
+    text-align: center;
 }
 
 .menu sidebar{
@@ -103,4 +105,15 @@ a.menu:hover sidebar{
     opacity: 1;
     transform: translateY(0);
     visibility: visible;
+}
+
+.category.open .menu sidebar {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    position: relative;
+    text-align: center;
+    background: none;
+    border: none;
+    box-shadow: none;
 }

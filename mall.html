@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/mall.css">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <script src="/JS/function.js" defer></script>
+    <script src="/JS/app.js" defer></script>
 </head>
 <body>
     <header>
@@ -21,11 +23,10 @@
     </header>
     <div class="border"></div>
     <div class="category">
-        <a class="menu-btn">
+        <a class="menu-btn" id="menuBtn">
             <span></span>
             <span></span>
             <span></span>
-            <sidebar class="submenu" id="entire-menu"></sidebar>
         </a>
         <a class="menu">
             <h2>내 정보</h2>
@@ -33,6 +34,7 @@
             <sidebar class="submenu">
                 <h3>마이페이지</h3>
                 <h3>장바구니</h3>
+                <h3>고객센터</h3>
             </sidebar>
         </a>
         <a class="menu">
@@ -41,7 +43,7 @@
             <sidebar class="submenu">
                 <h3>탈모 치료제</h3>
                 <h3>미공개 치료제</h3>
-                <h3>소원권</h3>
+                <h3><highlight>소원권</highlight></h3>
             </sidebar>
         </a>
         <a class="menu">
@@ -66,12 +68,40 @@
             <h2>이벤트</h2>
             <svg data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path></svg>
             <sidebar class="submenu">
-                <h3>시판 탈모약</h3>
-                <h3>미공개 치료제</h3>
-                <h3>소원권</h3>
+                <h3>진행중</h3>
+                <h3>진행 예정</h3>
+                <h3>종료</h3>
             </sidebar>
         </a>
     </div>
+   <!-- <div>
+        <sidebar class="category">
+            <div> </div>
+            <div>
+                <h3>마이페이지</h3>
+                <h3>장바구니</h3>
+            </div>
+            <div>
+                <h3>탈모 치료제</h3>
+                <h3>미공개 치료제</h3>
+                <h3>소원권</h3>
+            </div>
+            <div>
+                <h3>가전제품</h3>
+                <h3>패션/리빙</h3>
+                <h3>식료품</h3>
+            </div>
+            <div>
+                <h3>숙소/교통</h3>
+                <h3>공연</h3>
+                <h3>서적</h3>
+            </div>
+            <div>
+                <h3>시판 탈모약</h3>
+                <h3>미공개 치료제</h3>
+            </div>
+        </sidebar>
+    </div> -->
     <div class="border"></div>
 </body>
 </html>
